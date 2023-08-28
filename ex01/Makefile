@@ -6,14 +6,14 @@
 #    By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/28 11:28:32 by mparasku          #+#    #+#              #
-#    Updated: 2023/08/28 12:18:51 by mparasku         ###   ########.fr        #
+#    Updated: 2023/08/28 14:04:47 by mparasku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = phonebook
 FLAG = -std=c++98
 
-SRC = main.cpp Phonebook.cpp
+SRC = main.cpp Phonebook.cpp Contact.cpp
 #HEADER = main.hpp
 OBJ = $(SRC:.cpp=.o)
 
