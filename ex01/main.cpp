@@ -15,27 +15,24 @@
 int main(void)
 {
 	std::string input;
-	Phonebook my_phonebook;
-	Contact my_contact;
+	Phonebook phonebook;
 
 	while(std::cin) {
-		my_phonebook.Print();
 		std::cout << "Enter a command (SEARCH | ADD | EXIT): " << std::endl;
 		std::getline(std::cin, input);
-		if (input == "EXIT") {
-			std::cout << "-----Exiting-----" << std::endl;
-			return (0);
-		}
+		if (input == "EXIT")
+			return 0;
 		else if (input == "ADD") {
-			//my_phonebook.addContact();
-			std::cout << "-----Adding-----" << std::endl;
-			std::cout << "Enter the name: ";
-            std::getline(std::cin, input);
-			my_contact.setName(input);
-			std::cout << "Added contact with name: " << my_contact.getName() << std::endl;
-		}
+            if (!phonebook.addContact()) {
+                std::cout << "Adding contact failed. Exiting." << std::endl;
+                return -1;
+            }
+        }
 		else if (input == "SEARCH") {
-			std::cout << "-----Searching-----" << std:: endl;
+			if (!phonebook.searchContact()) {
+                std::cout << "Searching contact failed. Exiting." << std::endl;
+                return -1;
+            }
 		}
 		else {
 			if (!std::cin.eof())
