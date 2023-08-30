@@ -5,20 +5,21 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/08/28 11:26:48 by mparasku          #+#    #+#              #
-#    Updated: 2023/08/28 11:26:49 by mparasku         ###   ########.fr        #
+#    Created: 2023/08/30 13:34:39 by mparasku          #+#    #+#              #
+#    Updated: 2023/08/30 13:35:03 by mparasku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = account
 FLAG = -std=c++98
 
-SRC = megaphone.cpp 
+SRC = tests.cpp Account.cpp
+#HEADER = main.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(SRC)
 	c++ -Wall -Wextra -Werror $(FLAG) $(OBJ) -o $(NAME) 
 
 clean:
