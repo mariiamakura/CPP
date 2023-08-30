@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 12:20:52 by mparasku          #+#    #+#             */
-/*   Updated: 2023/08/28 15:37:18 by mparasku         ###   ########.fr       */
+/*   Updated: 2023/08/30 14:14:42 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,9 +103,9 @@ static void printListContacts(Contact contact, int i) {
 static void printContact(Contact contact) {
     std::cout << "Name: " << contact.getName() << std::endl;
     std::cout << "Last name: " << contact.getLastName() << std::endl;
-    std::cout << "Nickname" << contact.getNickname() << std::endl;
-    std::cout << "Phone number" << contact.getPhone() << std::endl;
-    std::cout << "Secret" << contact.getSecret() << std::endl;
+    std::cout << "Nickname: " << contact.getNickname() << std::endl;
+    std::cout << "Phone number: " << contact.getPhone() << std::endl;
+    std::cout << "Secret: " << contact.getSecret() << std::endl;
 }
 
 bool Phonebook::searchContact(void) const {
