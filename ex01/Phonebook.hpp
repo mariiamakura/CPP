@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 12:06:36 by mparasku          #+#    #+#             */
-/*   Updated: 2023/08/28 15:27:51 by mparasku         ###   ########.fr       */
+/*   Updated: 2023/08/30 16:39:07 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,6 @@ class Phonebook
 		//destructor
 		~Phonebook();
 		
-//		void Print() {
-//			std::cout << _my_phonebook[0].getName() << std::endl;
-//            std::cout << _my_phonebook[1].getName() << std::endl;
-//		}
-		//add_contact
-		//search_contact
 		bool addContact(void);
         bool searchContact(void) const;
 	private:
